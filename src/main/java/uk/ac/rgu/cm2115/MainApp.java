@@ -15,6 +15,92 @@ public class MainApp {
 
     public static void main(String[] args) {
 
+       /*  Light light1 = new Light(0, false);
+        Light light2 = new Light(5, true);
+        Light light3 = new Light(2, true);
+        Light light4 = new Light(0, false);
+
+        Light[]lightArray = {light1, light2, light3, light4};
+        for(int i = 0; i < lightArray.length; i++){
+            
+            lightArray[i].dimUp();
+            lightArray[i].dimDown();
+            lightArray[i].switchOff();
+            lightArray[i].switchOn();
+        }
+
+        SmartPlug plug2 = new SmartPlug();
+        SmartPlug plug1 = new SmartPlug();
+        SmartPlug plug3 = new SmartPlug();
+        SmartPlug plug4 = new SmartPlug();
+
+
+        Thermostat therm1 = new Thermostat();
+        Thermostat therm2 = new Thermostat();
+        Thermostat therm3 = new Thermostat();
+
+
+        
+
+       /*  light1.switchOn();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimUp();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.dimDown();
+        light1.switchOff();
+        light2.switchOff();
+        light2.dimDown();
+        plug1.switchOn();
+        plug1.switchOn();
+        plug1.switchOff();
+        plug1.switchOff();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnUp();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();
+        therm1.turnDown();*/
+
+
+
         // JavaFX launch code - we'll get to this later
         //launch();
     }
