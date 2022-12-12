@@ -5,8 +5,8 @@ public class Light extends Device {
     
     public Light(String name) {
         super(name);
-        this.lightLevel = lightLevel;
-        this.isOn = isOn;
+        //this.lightLevel = lightLevel;
+       // this.isOn = isOn;
     }
 
     private int lightLevel = 0;

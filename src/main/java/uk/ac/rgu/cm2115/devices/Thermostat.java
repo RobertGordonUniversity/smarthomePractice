@@ -5,7 +5,7 @@ public class Thermostat extends Device {
 
     public Thermostat(String name) {
         super(name);
-        this.tempSetting = tempSetting;
+       // this.tempSetting = tempSetting;
     }
 
     public void turnUp(){
