@@ -43,5 +43,7 @@ public class Home {
 
     public Home(){
 
+        this.devices = new Device[5];
+
     }
 }
