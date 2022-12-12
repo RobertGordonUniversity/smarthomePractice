@@ -2,12 +2,12 @@ package uk.ac.rgu.cm2115.devices;
 
 public abstract class Device {
     
-    protected String name;
+    protected final String name;
 
 
     
 
-    public Device(String name) {
+    public  Device(String name) {
         this.name = name;
     }
 

@@ -7,6 +7,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import uk.ac.rgu.cm2115.devices.Device;
+import uk.ac.rgu.cm2115.devices.Light;
+import uk.ac.rgu.cm2115.devices.SmartPlug;
+import uk.ac.rgu.cm2115.devices.Thermostat;
 
 /**
  * JavaFX App
@@ -100,6 +104,19 @@ public class MainApp extends Application {
         therm1.turnDown();*/
 
 
+        Device[] devices = new Device[5];
+        devices[0] = new Light("Living Room");
+        devices[1] = new Light("Bedroom");
+        devices[2] = new SmartPlug("Tv");
+        devices[3] = new SmartPlug("Kettle");
+        devices[4] = new Thermostat("Bedroom");
+
+        for(int i = 0; i < devices.length; i++){
+            devices[i].toString();
+
+        }
+
+
 
         // JavaFX launch code - we'll get to this later
         launch();
@@ -110,11 +127,18 @@ public class MainApp extends Application {
     
     private static Scene scene;
 
+    
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("SmartHomeMain"), 640, 480);
         stage.setScene(scene);
         stage.show();
+        Home home = new Home();
+        home.addDevice(new Light("Living Room"));
+        home.addDevice(new SmartPlug("Kettle"));
+        home.addDevice(new Thermostat("Whole House"));
+
+        setScene("SmartHomeMain", home);
     }
 
     static void setRoot(String fxml) throws IOException {

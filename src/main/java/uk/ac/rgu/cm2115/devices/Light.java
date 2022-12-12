@@ -3,8 +3,8 @@ package uk.ac.rgu.cm2115.devices;
 public class Light extends Device {
 
     
-    public Light(int lightLevel, boolean isOn) {
-        super();
+    public Light(String name) {
+        super(name);
         this.lightLevel = lightLevel;
         this.isOn = isOn;
     }
@@ -16,10 +16,10 @@ public class Light extends Device {
     public void switchOn(){
         if(isOn == false){
             this.isOn = true;
-            System.out.println("light is ON");
+            System.out.println(name + " light is ON");
             
         }else{
-            System.out.println("light is already switched on");
+            System.out.println(name +"light is already switched on");
         }
 
         
@@ -28,9 +28,9 @@ public class Light extends Device {
     public void switchOff(){
         if(isOn == true){
             this.isOn = false;
-            System.out.println("light is OFF");
+            System.out.println(name + " light is OFF");
         } else{
-            System.out.println("light is alreasdy off");
+            System.out.println(name + " light is alreasdy off");
         }
        
     }
@@ -38,19 +38,19 @@ public class Light extends Device {
     public void dimUp(){
         if ((lightLevel >= 0) && (lightLevel < 10)){
             lightLevel++;
-            System.out.println("lights are at " + (lightLevel * 10) + " percent.");
+            System.out.println(name + " lights are at " + (lightLevel * 10) + " percent.");
 
         } else{
-            System.out.println("lights at 100 percent");
+            System.out.println(name + " lights at 100 percent");
         }
     }
 
     public void dimDown(){
         if((lightLevel <= 10) && (lightLevel > 0)){
             lightLevel --;
-            System.out.println("lights are at " + (lightLevel * 10) + " percent.");
+            System.out.println(name + " lights are at " + (lightLevel * 10) + " percent.");
         }else{
-            System.out.println("lights at 100 percent");
+            System.out.println(name + " lights at 100 percent");
 
         }
     }
