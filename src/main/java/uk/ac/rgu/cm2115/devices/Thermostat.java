@@ -1,4 +1,4 @@
-package uk.ac.rgu.cm2115;
+package uk.ac.rgu.cm2115.devices;
 
 public class Thermostat {
     private int tempSetting = 0;

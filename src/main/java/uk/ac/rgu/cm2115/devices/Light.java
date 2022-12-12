@@ -1,9 +1,10 @@
-package uk.ac.rgu.cm2115;
+package uk.ac.rgu.cm2115.devices;
 
-public class Light {
+public class Light extends Device {
 
     
     public Light(int lightLevel, boolean isOn) {
+        super();
         this.lightLevel = lightLevel;
         this.isOn = isOn;
     }
