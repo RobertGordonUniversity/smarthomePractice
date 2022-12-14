@@ -1,6 +1,9 @@
 package uk.ac.rgu.cm2115.devices;
 
-public class Light extends Device {
+import uk.ac.rgu.cm2115.Dimmable;
+import uk.ac.rgu.cm2115.Switchable;
+
+public class Light extends Device implements Switchable, Dimmable {
 
     
     public Light(String name) {
@@ -12,7 +15,7 @@ public class Light extends Device {
     private int lightLevel = 0;
     private boolean isOn = false;
 
-
+    @Override
     public void switchOn(){
         if(isOn == false){
             this.isOn = true;
@@ -24,7 +27,7 @@ public class Light extends Device {
 
         
     }
-
+    @Override
     public void switchOff(){
         if(isOn == true){
             this.isOn = false;
@@ -35,6 +38,7 @@ public class Light extends Device {
        
     }
 
+    @Override
     public void dimUp(){
         if ((lightLevel >= 0) && (lightLevel < 10)){
             lightLevel++;
@@ -45,6 +49,7 @@ public class Light extends Device {
         }
     }
 
+    @Override
     public void dimDown(){
         if((lightLevel <= 10) && (lightLevel > 0)){
             lightLevel --;

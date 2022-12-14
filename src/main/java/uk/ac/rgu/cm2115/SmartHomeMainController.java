@@ -23,7 +23,7 @@ public class SmartHomeMainController extends Controller<Home>{
 
         for(int i = 0; i < devices.length; i++){
             if(devices[i] != null){
-                this.lstDevices.getItems().add(devices[i], );
+                this.lstDevices.getItems().add(devices[i]);
             }
         }
     }

@@ -104,7 +104,7 @@ public class MainApp extends Application {
         therm1.turnDown();*/
 
 
-        Device[] devices = new Device[5];
+       /*  Device[] devices = new Device[5];
         devices[0] = new Light("Living Room");
         devices[1] = new Light("Bedroom");
         devices[2] = new SmartPlug("Tv");
@@ -114,7 +114,15 @@ public class MainApp extends Application {
         for(int i = 0; i < devices.length; i++){
             devices[i].toString();
 
-        }
+        }*/
+
+        Switchable light = new Light ("LivingRoom"); 
+        
+        Switchable plug = new SmartPlug("Tv");
+
+        light.switchOn();
+        plug.switchOn();
+        
 
 
 

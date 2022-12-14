@@ -1,6 +1,8 @@
 package uk.ac.rgu.cm2115.devices;
 
-public class SmartPlug extends Device {
+import uk.ac.rgu.cm2115.Switchable;
+
+public class SmartPlug extends Device implements Switchable {
     
     public SmartPlug(String name) {
         super(name);
@@ -9,6 +11,8 @@ public class SmartPlug extends Device {
 
     private boolean isOn = false;
 
+    
+    @Override
     public void switchOn(){
         if(isOn == false){
             this.isOn = true;
@@ -18,6 +22,7 @@ public class SmartPlug extends Device {
         }
     }
 
+    @Override
     public void switchOff(){
         if(isOn == true){
             this.isOn = false;
