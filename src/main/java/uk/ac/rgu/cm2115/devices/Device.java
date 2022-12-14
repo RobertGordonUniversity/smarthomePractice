@@ -1,7 +1,8 @@
 package uk.ac.rgu.cm2115.devices;
 
-public abstract class Device {
-    
+public abstract class Device<T> {
+
+    protected T status;
     protected final String name;
 
 
@@ -13,6 +14,10 @@ public abstract class Device {
 
     final String getName(){
         return name;
+    }
+
+    public final T status(){
+        return status();
     }
 
     @Override
