@@ -28,6 +28,13 @@ public class SmartHomeMainController extends Controller<Home>{
         }
     }
 
+    private void deviceSelected(){
+        Device device = this.lstDevices.getSelectionModel().getSelectedItem();
+        this.statusLbl.setText(device.getStatus().toString());
+
+
+    }
+
    
     
     
