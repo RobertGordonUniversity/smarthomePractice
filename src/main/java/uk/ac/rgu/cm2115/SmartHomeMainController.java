@@ -19,7 +19,7 @@ public class SmartHomeMainController extends Controller<Home>{
 
     public void setModel(Home model){
         this.model = model;
-        Device[] devices = model.getDevices();
+        Device<?>[] devices = model.getDevices();
 
         for(int i = 0; i < devices.length; i++){
             if(devices[i] != null){
@@ -29,7 +29,7 @@ public class SmartHomeMainController extends Controller<Home>{
     }
 
     private void deviceSelected(){
-        Device device = this.lstDevices.getSelectionModel().getSelectedItem();
+        Device<?> device = this.lstDevices.getSelectionModel().getSelectedItem();
         this.statusLbl.setText(device.getStatus().toString());
 
 

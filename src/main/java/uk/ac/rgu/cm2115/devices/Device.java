@@ -16,8 +16,8 @@ public abstract class Device<T> {
         return name;
     }
 
-    public final T status(){
-        return status();
+    public final T getStatus(){
+        return status;
     }
 
     @Override
